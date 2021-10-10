@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainWrapper {
+    width: 920px;
+    display: flex;
+    background: url('./assets/Background.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.blueSidebar {
+    content: '';
+    background: #00AEFF;
+    /* height: 100vh; */
+    width: 24px;
+}
+.main {
+    width: calc(100% - 24px);
+    display: flex;
+    flex-direction: column;
+    padding: 3.5em;
+    justify-content: space-between;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.header .logos {
+    display: flex;
+}
+.header .logos img {
+    margin-right:10px;
+    height: 20px;
+    image-rendering: pixelated;
+}
+.header .verify {
+    color: rgb(75, 75, 75);
+    font-size: 12px;
+}
+.header .verify a {
+    text-decoration: none;
+    color: rgb(75, 75, 75);
+    font-weight: 500;
+}
+
+.title {
+    margin: 1em 0;
+    margin-top: 2.5em;
+    font-size: 28px;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.name h5{
+    font-size: 48px;
+    font-weight: 600;
+}
+.caption {
+    margin: 14px 0;
+    width: 60ch;
+    font-size: 14px;
+    line-height: 20px;
+}
+.caption span {
+    font-weight: 600;
+}
+.progress {
+    color: #00AEFF;
+    font-weight: 500;
+    font-size: 18px;
+    margin: 16px 0;
+}
+
+.endorsement {
+    margin-top: 3em;
+    font-family: 'Work Sans', sans-serif;
+}
+.endorsement h5 {
+    font-size: 16px;
+}
+.endorsement span {
+    font-size: 13px;
+}
+.endorsement img {
+    height: 65px;
+    image-rendering: pixelated;
+}
+
+@media screen and (max-width: 960px){
+    .mainWrapper {
+        width: 90vw;
+        background-size: cover;
+    }
+}
+
+@media screen and (max-width: 720px){
+    .mainWrapper {
+        width: 100vw;
+        background-size: cover;
+    }
+    .header {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .header .verify {
+        margin: 0.8em 0;
+    }
+
+    .caption {
+        width: 100%;
+        font-size: 14px;
+        line-height: 18px;
+    }
+}
+
+@media screen and (max-width: 520px){
+    .mainWrapper {
+        width: 100vw;
+        background-size: cover;
+    }
+    .header {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .header .verify {
+        margin: 0.8em 0;
+    }
+    .title {
+        font-size: 22px;
+    }
+    .main {
+        padding: 3.5em 1.8em;
+    }
+    .name h5{
+        font-size: 40px;
+        font-weight: 600;
+    }
+    .caption {
+        width: 100%;
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .progress {
+        font-size: 14px;
+    }
+}
